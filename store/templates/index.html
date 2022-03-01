@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!....Cards....>
+
+<div class="grid-container">
+    <Style>.grid-container {
+        padding: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1% 2%;
+}
+.card {
+    border-color: #e1e1e1;
+    border-radius: 40px 0px 40px 0px;
+    box-shadow: 2px 5px 5px #29c68c;
+}
+.card-img-top{
+    margin-top:10px;
+}
+
+    </Style>
+    {%for prod in products %}
+    <div class="card" style="width: 18rem; height: 100%; margin: 10px">
+        <img class="card-img-top mx-auto" style="width: 10rem; height: 50%" src="{{prod.image.url}}"
+             alt="image not found!">
+        <div class="card-body">
+            <h5 class="card-title">{{prod.name}}</h5>
+            <h5 class="card-text">₹{{prod.price}}</h5>
+            <p class="card-text">{{prod.description}}</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

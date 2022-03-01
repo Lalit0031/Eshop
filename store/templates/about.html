@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    padding: 0;
+    margin: 0
+}
+
+.menu {
+    width: 44px;
+    position: relative;
+    top: -10px;
+    height: 3px;
+    background: #00000054;
+    box-shadow: 0px 11px #ff00006b, 1px 22px #66b78d
+}
+
+
+h2 {
+    font-weight: lighter
+}
+
+.container{
+
+ border-color: #e1e1e1;
+    border-radius: 40px 0px;
+    box-shadow: 0px 4px 4px #29c68c;
+}
+.about {
+    text-align: center;
+    color: gray;
+    margin-top:20px;
+    padding: 40px
+
+}
+
+.title {
+    font-size: 22px;
+    color: #2c2c2c
+}
+
+.desc {
+    color: #909090;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.45em;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    width: 70%;
+    margin: 0 auto
+}
+
+@media (max-width: 630px) {
+    .title {
+        font-size: 18px
+    }
+}
+
+.row {
+    width: 95%;
+    display: flex;
+    padding: 10px;
+    justify-content: center
+}
+
+@media (max-width: 494px) {
+    .row {
+        flex-direction: column
+    }
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px
+}
+
+.card_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 9px 30px -6px rgba(24, 206, 15, 0.3);
+    position: relative;
+    transition: transform .4s
+}
+
+.fas,
+.fab {
+    display: inline-block;
+    position: absolute;
+    color: #63b563;
+    transform: translate(-52%, 75%);
+    font-size: 40px
+}
+
+.card_title {
+    font-size: 20px;
+    margin: 12px;
+    font-weight: bold;
+    color: #000000a8;
+    transition: color .2s
+}
+
+.card:hover .card_title {
+    color: #4bd482
+}
+
+.card:hover .card_img {
+    transform: translate(0px, -10px)
+}
+
+.card_body {
+    color: #8c9490;
+    font-size: 16px;
+    padding: 0 5px;
+    line-height: 1.5;
+    word-spacing: 4px
+}
+</style>
+<div class="container">
+    <div class="about">
+        <div class="title">
+            <h1>About The Company</h1>
+        </div>
+        <div class="desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum orci urna, id malesuada purus porta at. In euismod mollis urna, sed feugiat neque suscipit eget. Proin ornare accumsan molestie. Morbi ac tellus diam. Vestibulum placerat lacus ut mauris dignissim imperdiet. Vestibulum id elit hendrerit, imperdiet est sit amet, eleifend turpis. Quisque mattis sodales arcu, at convallis orci commodo quis. Praesent vitae quam condimentum, suscipit nisl eget, efficitur massa. Morbi dictum varius erat non tincidunt. Ut massa odio, gravida vitae metus elementum, consectetur gravida erat. Quisque justo diam, varius sed dictum quis, porttitor id dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+Donec nec justo faucibus, volutpat ante tempor, sodales libero. Maecenas aliquet eu leo a elementum. Aliquam lacinia pulvinar neque, nec scelerisque erat varius ac. Vivamus et augue in ex convallis imperdiet in ac ipsum. Phasellus mollis sapien et dolor aliquet porttitor. Sed finibus lectus sed eros molestie dignissim. Curabitur at condimentum massa. Donec suscipit erat arcu, vel lobortis orci cursus sed. Vestibulum dapibus lorem sagittis, pharetra lorem et, tempor ex. Sed hendrerit lobortis dui ac sagittis. Sed rutrum eros sit amet nulla laoreet elementum.
+
+Maecenas euismod arcu sit amet leo gravida, sed posuere eros varius. Fusce sed ornare mi. In ornare erat et lorem semper vulputate. Sed nec bibendum tortor. Cras viverra consectetur ex, at tempus odio blandit a. Cras a libero interdum, blandit sem quis, imperdiet dolor. Nunc eget magna tempus, pharetra lorem vel, tristique mauris. Nam egestas metus id euismod aliquam. Aenean sed pretium nulla. Phasellus pellentesque facilisis mauris non iaculis. Proin iaculis ligula nec purus aliquet maximus. Integer sodales, purus at condimentum vulputate, nibh nisl consectetur risus, ac commodo dolor turpis vel odio.
+
+Quisque sodales vestibulum libero et euismod. Suspendisse quis nibh dolor. Vestibulum dui nisi, sollicitudin sed dui vel, lobortis laoreet elit. Aliquam lobortis, ante id luctus sollicitudin, diam enim tempus eros, nec luctus augue augue vel quam. Donec nec massa ac leo viverra tincidunt. Aliquam a sapien ut neque malesuada porta sed nec lectus. Etiam quis odio molestie nibh vehicula pretium id sit amet justo.
+
+Donec eget placerat ligula. Duis pulvinar, ex vitae faucibus consequat, odio lacus commodo neque, ut porttitor metus quam nec leo. Mauris at nisi nulla. Donec laoreet vitae dolor eu faucibus. Duis eget tristique mauris. Nam vehicula pellentesque viverra. Vestibulum commodo metus dignissim libero convallis, sit amet ornare magna tempus. Ut accumsan vitae massa at malesuada.</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
